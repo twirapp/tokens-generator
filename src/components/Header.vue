@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useColorMode } from '@vueuse/core'
-import {Sun,Moon} from 'lucide-vue-next'
+import {Sun,Moon, SeparatorVertical} from 'lucide-vue-next'
 
 import { Button } from '@/components/ui/button';
 
@@ -12,7 +12,11 @@ function switchTheme() {
 
 <template>
   <div class="flex w-full px-4 py-2 items-center justify-between border-b border-b-border">
-    <a href="https://twir.app">Twitch token generator</a>
+    <span class="flex gap-4">
+      <a href="https://twir.app" target="_blank">Twir</a>
+      <SeparatorVertical />
+      <a href="/">Twitch Tokens Generator</a>
+    </span>
     <Button @click="switchTheme">
       <Sun v-if="mode === 'dark'" />
       <Moon v-else />

@@ -27,7 +27,7 @@ const redirectLink = window.location.origin
       <CardTitle>Applications secrets</CardTitle>
       <CardDescription class="flex flex-col">
         <span>
-          Your twitch clientId and clientSecret. Note, we are not storing your data on our servers, local storage of browser used instead.
+          We are not storing your data on our servers. Local storage of browser used instead.
         </span>
         <span>
           You must set the redirect URL for your TwitchDev application to: <code class="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">{{ redirectLink }}</code>
