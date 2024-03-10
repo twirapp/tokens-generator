@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Input } from '@/components/ui/input'
+import { PasswordInput } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -38,14 +38,14 @@ const redirectLink = window.location.origin
       <div class="flex flex-col gap-4">
         <div class="form-item">
           <span class="whitespace-nowrap">Client id</span>
-          <Input
+          <PasswordInput
             v-model="clientId"
             type="password"
           />
         </div>
         <div class="form-item">
           <span class="whitespace-nowrap">Client secret</span>
-          <Input
+          <PasswordInput
             v-model="clientSecret"
             type="password"
           />
