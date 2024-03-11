@@ -72,12 +72,12 @@ async function fetchTokens(code: string) {
         <div class="form-item">
           <span class="whitespace-nowrap">Access Token</span>
           <Skeleton v-if="!accessToken" class="w-full h-8 rounded-md"></Skeleton>
-          <PasswordInput v-else v-model="accessToken"></PasswordInput>
+          <PasswordInput v-else v-model="accessToken" readonly></PasswordInput>
         </div>
         <div class="form-item">
           <span class="whitespace-nowrap">Refresh Token</span>
           <Skeleton v-if="!refreshToken" class="w-full h-8 rounded-md"></Skeleton>
-          <PasswordInput v-else v-model="refreshToken"></PasswordInput>
+          <PasswordInput v-else v-model="refreshToken" readonly></PasswordInput>
         </div>
       </div>
     </DialogContent>
