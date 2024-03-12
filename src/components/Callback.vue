@@ -42,7 +42,10 @@ async function fetchTokens(code: string) {
     code,
     redirect_uri: window.location.origin,
   })
-  const resp = await fetch(`https://id.twitch.tv/oauth2/token?${params}`, { method: 'POST' })
+  const resp = await fetch(`https://id.twitch.tv/oauth2/token?${params}`, {
+    method: 'POST',
+    body: params.toString(),
+  })
 
   const data = await resp.json()
   if ('message' in data) {
