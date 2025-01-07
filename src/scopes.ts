@@ -1,5 +1,7 @@
 // check genscript in root for generating scopes
 
+{analytics:read:extensions,analytics:read:games,bits:read,channel:bot,channel:edit:commercial,channel:manage:ads,channel:manage:broadcast,channel:manage:extensions,channel:manage:guest_star,channel:manage:moderators,channel:manage:polls,channel:manage:predictions,channel:manage:raids,channel:manage:redemptions,channel:manage:schedule,channel:manage:videos,channel:manage:vips,channel:moderate,channel:read:ads,channel:read:charity,channel:read:editors,channel:read:goals,channel:read:guest_star,channel:read:hype_train,channel:read:polls,channel:read:predictions,channel:read:redemptions,channel:read:stream_key,channel:read:subscriptions,channel:read:vips,chat:edit,chat:read,clips:edit,moderation:read,moderator:manage:announcements,moderator:manage:automod,moderator:manage:automod_settings,moderator:manage:banned_users,moderator:manage:blocked_terms,moderator:manage:chat_messages,moderator:manage:chat_settings,moderator:manage:guest_star,moderator:manage:shield_mode,moderator:manage:shoutouts,moderator:manage:unban_requests,moderator:manage:warnings,moderator:read:automod_settings,moderator:read:blocked_terms,moderator:read:chat_settings,moderator:read:chatters,moderator:read:followers,moderator:read:guest_star,moderator:read:shield_mode,moderator:read:shoutouts,moderator:read:unban_requests,user:bot,user:edit,user:edit:follows,user:manage:blocked_users,user:manage:chat_color,user:manage:whispers,user:read:blocked_users,user:read:broadcast,user:read:chat,user:read:email,user:read:emotes,user:read:follows,user:read:moderated_channels,user:read:subscriptions,user:write:chat,whispers:edit,whispers:read}
+
 export const apiScopes = {
   "analytics:read:extensions": "View analytics data for the Twitch Extensions owned by the authenticated account.",
   "analytics:read:games": "View analytics data for the games owned by the authenticated account.",
@@ -51,6 +53,8 @@ export const apiScopes = {
   "moderator:manage:shoutouts": "Manage a broadcaster’s shoutouts.",
   "moderator:read:unban_requests": "View a broadcaster’s unban requests.",
   "moderator:manage:unban_requests": "Manage a broadcaster’s unban requests.",
+  "moderator:read:warnings": "Read warnings in channels where you have the moderator role.",
+  "moderator:manage:warnings": "Warn users in channels where you have the moderator role.",
   "user:edit": "Manage a user object.",
   "user:edit:follows": "Deprecated. Was previously used for “Create User Follows” and “Delete User Follows.” See Deprecation of Create and Delete Follows API Endpoints.",
   "user:read:blocked_users": "View the block list of a user.",
