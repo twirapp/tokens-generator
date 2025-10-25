@@ -80,7 +80,7 @@ async function copyLink() {
       <TableBody>
         <TableRow>
           <TableCell class="text-4xl text-center" colspan="3">
-            Api scopes
+            Scopes
           </TableCell>
         </TableRow>
         <TableRow v-for="[scope, description] of Object.entries(apiScopes)" :key="scope">
@@ -91,7 +91,7 @@ async function copyLink() {
             ></Switch>
           </TableCell>
           <TableCell>{{ scope }}</TableCell>
-          <TableCell>{{ description }}</TableCell>
+          <TableCell class="whitespace-pre-wrap">{{ description }}</TableCell>
         </TableRow>
         <TableRow>
           <TableCell class="text-4xl text-center" colspan="3">
