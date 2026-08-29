@@ -16,7 +16,7 @@ export const apiScopes = {
     "channel:read:goals": "View Creator Goals for a channel.\n\nAPI\nGet Creator Goals\n\nEventSub\nGoal Begin\nGoal Progress\nGoal End",
     "channel:read:guest_star": "Read Guest Star details for your channel.\n\nAPI\nGet Channel Guest Star Settings\nGet Guest Star Session\nGet Guest Star Invites\n\nEventSub\nChannel Guest Star Session Begin\nChannel Guest Star Session End\nChannel Guest Star Guest Update\nChannel Guest Star Settings Update",
     "channel:manage:guest_star": "Manage Guest Star for your channel.\n\nAPI\nUpdate Channel Guest Star Settings\nCreate Guest Star Session\nEnd Guest Star Session\nSend Guest Star Invite\nDelete Guest Star Invite\nAssign Guest Star Slot\nUpdate Guest Star Slot\nDelete Guest Star Slot\nUpdate Guest Star Slot Settings\n\nEventSub\nChannel Guest Star Session Begin\nChannel Guest Star Session End\nChannel Guest Star Guest Update\nChannel Guest Star Settings Update",
-    "channel:read:hype_train": "View Hype Train information for a channel.\n\nAPI\nGet Hype Train Events\n\nEventSub\nHype Train Begin\nHype Train Progress\nHype Train End",
+    "channel:read:hype_train": "View Hype Train information for a channel.\n\nAPI\nGet Hype Train Status\n\nEventSub\nHype Train Begin\nHype Train Progress\nHype Train End",
     "channel:manage:moderators": "Add or remove the moderator role from users in your channel.\n\nAPI\nAdd Channel Moderator\nRemove Channel Moderator\nGet Moderators",
     "channel:read:polls": "View a channel’s polls.\n\nAPI\nGet Polls\n\nEventSub\nChannel Poll Begin\nChannel Poll Progress\nChannel Poll End",
     "channel:manage:polls": "Manage a channel’s polls.\n\nAPI\nGet Polls\nCreate Poll\nEnd Poll\n\nEventSub\nChannel Poll Begin\nChannel Poll Progress\nChannel Poll End",
@@ -56,7 +56,7 @@ export const apiScopes = {
     "moderator:manage:shield_mode": "Manage a broadcaster’s Shield Mode status.\n\nAPI\nUpdate Shield Mode Status\n\nEventSub\nShield Mode Begin\nShield Mode End",
     "moderator:read:shoutouts": "View a broadcaster’s shoutouts.\n\nEventSub\nShoutout Create\nShoutout Received",
     "moderator:manage:shoutouts": "Manage a broadcaster’s shoutouts.\n\nAPI\nSend a Shoutout\n\nEventSub\nShoutout Create\nShoutout Received",
-    "moderator:read:suspicious_users": "Read chat messages from suspicious users and see users flagged as suspicious in channels where you have the moderator role.\n\nEventSub\nChannel Suspicious User Message\nChannel Suspicious User Update",
+    "moderator:read:suspicious_users": "Read chat messages from suspicious users and see users flagged as suspicious in channels where the user has the moderator role.\n\nEventSub\nChannel Suspicious User Message\nChannel Suspicious User Update",
     "moderator:manage:suspicious_users": "Manage suspicious user statuses in channels where the user has the moderator role.\n\nAPI\nAdd suspicious status to chat user\nRemove suspicious status from chat user",
     "moderator:read:unban_requests": "View a broadcaster’s unban requests.\n\nAPI\nGet Unban Requests\n\nEventSub\nChannel Unban Request Create\nChannel Unban Request Resolve\nChannel Moderate",
     "moderator:manage:unban_requests": "Manage a broadcaster’s unban requests.\n\nAPI\nResolve Unban Requests\n\nEventSub\nChannel Unban Request Create\nChannel Unban Request Resolve\nChannel Moderate",
@@ -82,6 +82,7 @@ export const apiScopes = {
 }
 
 export const chatScopes = {
-  "chat:edit": "Send live stream chat messages using an IRC connection.",
-  "chat:read": "View live stream chat messages using an IRC connection.",
+  "chat:edit": "Send chat messages to a chatroom using an IRC connection.",
+  "chat:read": "View chat messages sent in a chatroom using an IRC connection.",
+  "whispers:read": "Receive whisper messages for your user using PubSub.",
 }
